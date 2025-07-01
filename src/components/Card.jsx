@@ -1,12 +1,31 @@
 import React from 'react'
+import { IoMdStar } from "react-icons/io";
+import { IoMdStarOutline } from "react-icons/io";
 
 const Card = (data) => {
   return (
-    <div className=' flex flex-col items-center justify-center bg-gray-600 p-10 border-amber-50 rounded-lg shadow-md size-48 hover:scale-50 transition-transform duration-300 ease-in-out   '>
-    <img src={data.image} alt="logo" className=' bg-white rounded-[100px] border-2 size-48 ' />
-    <h3 className='font-semibold m-3'> {data.name}</h3>
-    
-    </div>
+   <div>
+      <div className="max-w-sm rounded-[23px] border-amber-100 border overflow-hidden shadow-lg m-4 w-[330px] h-[445px]">
+        <img className="w-[330px] h-[300px] px-17" src={data.image} alt={data.title} />
+        <div className="px-6 py-4 border-t border-gray-200">
+          <div className="font-light flex justify-between text-xl mb-2 ">
+             choco {data.title}
+             <p className='flex items-center text-yellow-500'>
+             <IoMdStar/><IoMdStar/> 
+              <IoMdStar/><IoMdStar/> 
+              <IoMdStarOutline/>
+              </p>
+             </div>
+          <p className="text-gray-700 text-xl">
+            furut and mango  {data.description}
+          </p>
+        </div>
+        <div className="px-6 flex justify-between items-center py-2.5 ">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 "> $20{data.category}</span>
+          <span className='font-light text-gray-500'> 100 ml </span>
+        </div>
+      </div>
+   </div>
   )
 }
 
