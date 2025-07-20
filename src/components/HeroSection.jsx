@@ -4,7 +4,7 @@ import heroImage from "../assets/logo.png";
 
 const HeroSection = () => {
   return (
-    <div className="w-full bg-gray-50 min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10">
+    <div className="w-full bg-violet-100  min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10">
       {/* Left Side - Text */}
       <div className="max-w-xl space-y-6 text-center  md:text-left">
         <p className="text-gray-500 text-lg">Flat 20% Off</p>

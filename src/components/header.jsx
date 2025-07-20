@@ -33,7 +33,7 @@ const Header = () => {
 
         {/* Right Icons */}
         <div className="flex items-center gap-4 text-lg  w-30  text-gray-700">
-          <a href="#" className="hover:text-indigo-600 ml-20 text-violet-400 text-xl">Login</a>
+          <a href="#" className="hover:text-indigo-600 ml-2 text-violet-400 text-xl">Login</a>
           </div>
           <div className="flex items-center w-30 gap-3">
             <FiHeart />
@@ -51,7 +51,7 @@ const Header = () => {
 
       {/* Navigation Bar */}
       <nav className="px-6 md:px-16 py-3 flex flex-wrap justify-between items-center text-gray-700 text-sm">
-        <div className="flex gap-4 overflow-x-auto whitespace-nowrap">
+        <div className="flex gap-4 overflow-x-auto whitespace-nowrap font-semibold text-sm md:text-base text-violet-800">
           <a href="#" className="hover:text-indigo-600">Home</a>
           <a href="#" className="hover:text-indigo-600">Categories</a>
           <a href="#" className="hover:text-indigo-600">Products</a>
@@ -63,7 +63,7 @@ const Header = () => {
         {/* Location Dropdown (Mobile View shown here always for simplicity) */}
         <div className="mt-2 md:mt-0">
           <select className="border px-2 py-1 rounded-md text-sm text-gray-700">
-            <option>Surat</option>
+            <option>Kangra</option>
             <option>Delhi</option>
             <option>Mumbai</option>
           </select>
