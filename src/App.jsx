@@ -8,6 +8,9 @@ import Login from './components/login.jsx'
 import Timer from './components/timer.jsx'
 import axios from 'axios'
 import Form from './components/form.jsx'
+import Navbar from './components/Navbar.jsx'
+import Hero from './components/HeroAI.jsx'
+import Dashbord from './components/Dashbord.jsx'
  
 function App() {
   // const data = [
@@ -36,8 +39,12 @@ function App() {
   return (
     
     <div>
-      <Header />
-      <HeroSection />
+      <Navbar />
+      <Hero />
+       <Dashbord />
+      
+      {/* <Header />
+      <HeroSection /> */}
       <Timer />
       <Login/>
       <Form />
